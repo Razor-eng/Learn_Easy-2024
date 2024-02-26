@@ -1,4 +1,4 @@
-import { TriangleDownIcon, TriangleUpIcon, ViewIcon } from '@chakra-ui/icons'
+import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons'
 import { IconButton, useColorMode } from '@chakra-ui/react'
 import { useState } from 'react'
 
@@ -12,7 +12,7 @@ const Answer = ({ answer }) => {
             {see ?
                 (
                     <div
-                        className={`pl-44 flex items-center cursor-pointer hover:border-b w-full border-gray-600 ${colorMode === "dark" ? "bg-slate-800" : "bg-slate-300"}`}
+                        className={`pl-32 md:pl-44 flex items-center cursor-pointer hover:border-b w-full border-gray-600 ${colorMode === "dark" ? "bg-slate-800" : "bg-slate-300"}`}
                         onClick={() => setSee(false)}
                     >
                         <h2 className='text-gray-600'>Answer</h2>
@@ -59,10 +59,10 @@ const Answer = ({ answer }) => {
                             </div>
                         </div>
                         <div
-                            className='pl-44 flex items-center cursor-pointer hover:border-b w-full border-gray-600'
+                            className='pl-32 md:pl-44 flex items-center cursor-pointer hover:border-b w-full border-gray-600'
                             onClick={() => setSee(true)}
                         >
-                            <h2 className='text-gray-700'>Hide</h2>
+                            <h2 className='text-gray-500'>Hide</h2>
                             <IconButton
                                 color='gray.500'
                                 bgColor={"transparent"}
