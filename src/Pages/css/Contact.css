@@ -157,10 +157,10 @@ section::after {
 
 @media screen and (max-width: 768px) {
   section::before {
-    transform: translate(-200px, -180px);
+    width: 0%;
   }
   section::after {
-    width: 0%;
+    width: 0;
   }
   .contacts {
     padding: 20px;

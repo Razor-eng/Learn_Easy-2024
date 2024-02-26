@@ -6,7 +6,7 @@ const Contact = () => {
     const { colorMode } = useColorMode();
 
     return (
-        <div className='w-full h-fit overflow-x-hidden'>
+        <div className='w-full h-[100vh] overflow-x-hidden overflow-y-hidden'>
             <section>
                 <div className='contacts'>
                     <h2>Contact Us</h2>
