@@ -16,7 +16,7 @@ const QuizAnswer = ({ quest, colorMode, countScore }) => {
             <ul className="ml-5">
                 {quest.options.map((option, id) => (
                     selected ? (
-                        <li key={id} className={`list-decimal border-b-2 p-4 ${val === id || id === answer ? "" : 'hover:bg-gray-600'} cursor-pointer ${val === id && "bg-red-600"} ${id === answer && "bg-green-500"}`}>
+                        <li key={id} className={`list-decimal border-b-2 p-4 ${val === id || id === answer ? "" : 'hover:bg-gray-600'} cursor-pointer ${val === id && "bg-red-600"} ${id === answer && "!bg-green-500"}`}>
                             {option}
                         </li>
                     ) : (
