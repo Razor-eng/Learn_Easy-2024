@@ -6,7 +6,6 @@ const Answer = ({ answer }) => {
     const [see, setSee] = useState(true)
     const data = answer.split("\n");
     const { colorMode } = useColorMode()
-
     return (
         <div className=''>
             {see ?
@@ -34,7 +33,7 @@ const Answer = ({ answer }) => {
                             {"A)"}
                             <div className='ml-2 font-light text-pretty text-sm '>
                                 {data.map(e => (
-                                    <div className='mt-2'>
+                                    <div key={e[0]} className='mt-2'>
                                         {e.includes(":") ? (
                                             <div>
                                                 {

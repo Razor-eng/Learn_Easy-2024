@@ -4,7 +4,7 @@ import Note from './Note'
 const Notes = ({ topic }) => {
     return (
         <>
-            {topic.title !== "ReactJS" ? (
+            {topic.title === "" ? (
                 <div className='w-full flex justify-center items-center h-full'>
                     <h1 className='text-2xl'>No data available!</h1>
                 </div>

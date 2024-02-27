@@ -11,7 +11,6 @@ const Home = () => {
             </h1>
             <div className="mt-2 grid grid-cols-1 ml-auto mr-auto md:ml-0 md:mr-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {Constants.map(e => (
-                    e.name === "ReactJS" &&
                     <Card
                         key={e.id}
                         logo={e.logo}

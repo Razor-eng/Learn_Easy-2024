@@ -4,8 +4,8 @@ const Context = ({ data }) => {
     let sentences = data.split("\n")
     return (
         <>
-            {sentences.map(sentence => (
-                <>
+            {sentences.map((sentence, id) => (
+                <div key={id}>
                     {
                         sentence.startsWith('\t') ?
                             (
@@ -20,7 +20,7 @@ const Context = ({ data }) => {
                                 </ p>
                             )
                     }
-                </>
+                </div>
             ))
             }
         </>
